@@ -154,6 +154,10 @@ body {
     height: 500px;
     background-size: cover;
     background-position: center;
+    display: none;
+}
+.home-banner-image.active {
+    display: block; /* Show the active image */
 }
 .home-banner-mid {
     position: absolute;
@@ -183,21 +187,54 @@ body {
     font-size: 20px;
     padding: 10px;
     z-index: 2;
+    transition: transform 0.5s;
+    overflow: hidden;
 }
 .prev-arrow {
-    left: 10px;
+    left: 30px;
 }
 .next-arrow {
-    right: 10px;
+    right: 30px;
 }
+.prev-arrow:hover,
+.next-arrow:hover {
+    transform: scale(1.5) translateY(-25%);
+}
+/* Dots Container */
+.dots-container {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+}
+.dot:hover{
+    transform: scale(1.2);
+}
+.dot.active {
+    background-color: #99c683; /* Active dot color */
+}
+
 /*Home Middle*/
 .home-button{
     width: 100px;
     height: 30px;
     border-radius: 15px;
-    transition: background-color 0.5s ease-out, color 0.5s ease-out;
+    transition: background-color 0.5s ease-out, color 0.5s ease-out, transform 0.5s ease-out;
 }
 .home-button:hover{
+    transform: scale(1.2);
     background-color: #99c683;
     color: white;
 }
@@ -295,8 +332,8 @@ body {
     flex-direction: row;
     justify-content: center;
     margin-inline: 5%;
-    margin-top: 40px;
-    margin-bottom: 200px;
+    margin-top: 50px;
+    margin-bottom: 150px;
     gap: 5%;
 }
 .about-section-3-bubble{
@@ -491,4 +528,42 @@ footer{
 footer>p,
 footer>h1{
     color: white;
+}
+
+/*pagination*/
+.pagination-wrapper {
+    font-size: 0;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.little-dot {
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 6px;
+    position: relative;
+    z-index: 10;
+}
+
+.big-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: #f6af54;
+    position: absolute;
+    top: 50%;
+    right: -6px;
+    transform: translateY(-50%);
+}
+
+.little-dot--first,
+.little-dot--last {
+    z-index: 5;
 }
