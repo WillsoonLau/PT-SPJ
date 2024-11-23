@@ -5,20 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PT. SPJ</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
+    <!--Goggle Fonts for Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /></head>
+    <!--Linking SwiperJS CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <body>
     <header class="header-container">
-        <nav class="header-top">
-            <div class="header-top-left">
-                <p>Email: <a class="email" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTNHdZTKwdpMcHqccgXfbRbjZMcdhhNJfntKnxVQxxtxFZBlXgGvWfldDQzBBtQJRqBpNB">spj.batam@gmail.com</a></p>
-                <p>Call Us: 0815 881 5121</p>
-            </div>
-            <div class="header-top-right">
-                <img class="logo-email" src="assets/SPJ-logo.png" alt="Email">
-                <img class="logo-instagram" src="" alt="Instagram">
-                <img class="logo-whatsapp" src="" alt="WhatsApp">
-            </div>
-        </nav>
         <nav class="header-bottom">
             <div class="header-bottom-left">
                 <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTNHdZTKwdpMcHqccgXfbRbjZMcdhhNJfntKnxVQxxtxFZBlXgGvWfldDQzBBtQJRqBpNB">
@@ -27,63 +19,64 @@
             </div>
             <div class="header-bottom-right">
                 <div class="nav-button">
-                    <a href="#" class="nav-link">HOME</a>
-
+                    <a href="#" class="nav-link" id="navbutton-home">HOME</a>
+        
                     <div class="dropdown">
-                        <a href="#" class="nav-link">ABOUT</a>
+                        <a href="#" class="nav-link" id="navbutton-about-main">ABOUT</a>
                         <div class="dropdown-content">
-                            <a href="#">Our History</a>
-                            <a href="#">About Us</a>
-                            <a href="#">Our Partner</a>
+                            <a href="#" id="navbutton-our-history">Our History</a>
+                            <a href="#" id="navbutton-about-us">About Us</a>
+                            <a href="#" id="navbutton-our-team">Our Team</a>
                         </div>
                     </div>
-
+        
                     <div class="dropdown">
-                        <a href="#" class="nav-link">PRODUCT</a>
-                        <div class="dropdown-content">
-                            <a href="#">Sayur</a>
-                            <a href="#">Buah</a>
-                            <a href="#">Produk Kering</a>
+                        <a href="#" class="nav-link" id="navbutton-product">PRODUCT</a>
+                        <div class="dropdown-content" >
+                            <a href="#" id="navbutton-sayur">Sayur</a>
+                            <a href="#" id="navbutton-buah">Buah</a>
+                            <a href="#" id="navbutton-produk-kering">Produk Kering</a>
                         </div>
                     </div>
-
-                    <a href="#" class="nav-link">CONTACT US</a>
+        
+                    <a href="#" class="nav-link" id="navbutton-contact-us">CONTACT US</a>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="main-container">
-        <section class="home-container">
-            <div class="home-banner-image" style="background-image: url(assets/SPJ-home-banner.png);"></div>
-            <div class="home-banner-image" style="background-image: url(assets/Iso-Tea-Background-25.png);"></div>
+    <main class="main-container" >
+        <section class="home-container" id="home">
+            <div class="home-banner-image active" style="background-image: url(assets/home-photo\ \(1\).png);"></div>
+            <div class="home-banner-image" style="background-image: url(assets/home-photo\ \(2\).png);"></div>
+            <div class="home-banner-image" style="background-image: url(assets/home-photo\ \(3\).png);"></div>
 
             <div class="prev-arrow" style="background-image: url(assets/arrow-key-prev.png);"></div>
             <div class="next-arrow" style="background-image: url(assets/arrow-key-next.png);"></div>
             <div class="home-banner-mid">
                 <h1>PT. Segar Prima Jaya</h1>
                 <br>
-                <p>We Are One Of the Largest Exporter and Importer of Fresh Fruits and Vegetables.</p>
+                <p>We Are One Of the Largest Importer of Fresh Fruits and Vegetables in Batam.</p>
                 <br>
                 <button class="home-button">About Us</button>
             </div>
             <div class="dots-container"></div>
         </section>
-        <section class="about-container">
+        <section class="about-container" id="about-main">
             <section class="about-section-1">
-                <div class="about-section-1-left">
+                <div class="about-section-1-left" id="our-history">
                     <h1>OUR HISTORY</h1>
                     <hr class="hr">
                     <p>Perusahaan PT. Segar Prima Jaya didirikan oleh Bapak Ngi Meng bersama Partner-nya sejak tahun 2008. Perusahaan didirikan berawal dari keinginan untuk menyediakan produk holtikultura yang lebih variasi dan harga yang lebih murah untuk warga Batam. Dari keinginan tersebut, maka PT. Segar Prima Jaya mulai memasok beberapa jenis sayuran seperti bawang merah, kentang, wortel, labu siam, kemiri, kol, tomat, jahe, dan lain lain dari kota Medan, Bandung, dan Jawa.</p>
                 </div>
                 <div class="about-section-1-right">
-                    <img class="about-image-1" src="assets/Iso-Tea-Background-25.png" alt="image-1">
+                    <img class="about-image-1" src="assets/about-photo (4).png" alt="image-1">
                 </div>
             </section>
             <section class="about-section-2">
                 <div class="about-section-2-container">
                     <div class="about-section-2-upper">
-                        <img class="about-image-2" src="assets/Iso-Tea-Background-25.png" alt="">
-                        <div class="about-section-2-text-container-our-journey">
+                        <img class="about-image-2" src="assets/about-photo (2).png" alt="">
+                        <div class="about-section-2-text-container-our-journey" id="about-us">
                             <h1>OUR JOURNEY</h1>
                             <hr>
                             <br>
@@ -116,7 +109,7 @@
                             <br>
                             <p>Komitmen atas pengiriman yang tepat waktu.</p>
                         </div>
-                        <img class="about-image-3" src="assets/Iso-Tea-Background-25.png" alt="">
+                        <img class="about-image-3" src="assets/about-photo (3).png" alt="">
                     </div>
                 </div>
             </section>
@@ -171,7 +164,36 @@
                 </div>
             </section>
         </section>
-        <section class="product-container">
+        <section class="ourFounder-container">
+            <div class="ourFounder-1">
+                <div class="ourFounder-1-left">
+                    <img class="ourFounder-1-left-image" src="assets/Iso-Tea-Background-25.png" alt="foto">
+                </div>
+                <div class="ourFounder-1-right">
+                    <h1 class="ourFounder-h1">Meet Our Team</h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non elit a massa elementum tempus at sit amet mauris. Nullam suscipit ligula leo, non eleifend nisl ultrices vel. Sed ut dictum nunc. Aliquam dolor nisl, pharetra ac semper ac, lacinia vel dui. Suspendisse mollis ut sapien non condimentum. Sed sed mi non nibh sodales consectetur eu non dolor. Maecenas in luctus tellus, quis vestibulum ligula. Suspendisse potenti.
+
+                        Aenean vel neque congue, laoreet enim ut, venenatis tellus. Quisque dictum ultricies pellentesque. Ut at nisl porttitor, condimentum turpis a, volutpat arcu. Morbi vitae erat sed massa facilisis volutpat vitae sit amet velit. Donec suscipit faucibus nisl, at pellentesque mauris viverra sit amet. Vestibulum quis lobortis purus. Etiam tempor vestibulum neque sed maximus. Proin quis nulla id nisi venenatis fermentum. Nullam dapibus maximus erat id consequat. Praesent mi tellus, tristique vel tortor interdum, convallis molestie est. Mauris quis commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent eu vestibulum ipsum. Aliquam tincidunt neque sed nulla scelerisque gravida in a ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In vitae consequat turpis, vel mattis tortor.</p>
+                </div>
+            </div>
+            <div class="ourFounder-2">
+                <h1 class="ourFounder-2-bottom ourFounder-h1">Our Leader</h1>
+                <div class="ourFounder-2-bottom">
+                    <img class="ourFounder-2-bottom-image" src="assets/Iso-Tea-Background-25.png" alt="foto">
+                    <img class="ourFounder-2-bottom-image" src="assets/Iso-Tea-Background-25.png" alt="foto">
+                    <img class="ourFounder-2-bottom-image" src="assets/Iso-Tea-Background-25.png" alt="foto">
+                </div>
+            </div>
+            <div class="ourFounder-3">
+                <img class="ourFounder-3-left" src="assets/Iso-Tea-Background-25.png" alt="">
+                <div class="ourFounder-3-right">
+                    <h1 class="ourFounder-h1">This is our ...</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non elit a massa elementum tempus at sit amet mauris. Nullam suscipit ligula leo, non eleifend nisl ultrices vel. Sed ut dictum nunc. Aliquam dolor nisl, pharetra ac semper ac, lacinia vel dui. Suspendisse mollis ut sapien non condimentum. Sed sed mi non nibh sodales consectetur eu non dolor. Maecenas in luctus tellus, quis vestibulum ligula. Suspendisse potenti.</p>
+                </div>
+            </div>
+        </section>
+        <section class="product-container" id="product">
             <div class="product-section-1">
                 <div class="product-section-1-left">
                     <p id="new-collection">New Collection</p>
@@ -190,40 +212,325 @@
                 </div>                     
                 <div 
                     class="product-section-1-right"
-                    style="background-image: url(assets/Iso-Tea-Background-25.png);">
+                    style="background-image: url(assets/image-1.png);">
                 </div>
             </div>
             <div class="product-section-2">
-                <div>
-                    <h1>Featured Products</h1>
+                <div class="product-section-2-left">
+                    <img src="assets/product-logo.png" width="150px" height="150px">
                 </div>
-                <p>Discover the freshness and premium quality of our products</p>
-                <br>
-                <h1>Sayur</h1>
-                <div class="product-image-gallery">
-                    <figure class="card">
-                        <img src="assets/product-baby-pokchoy.jpeg" alt="">
-                    </figure>
-                    <figure class="card">
-                        <img src="assets/product-bunga-kol.jpeg" alt="">
-                    </figure>
-                    <figure class="card">
-                        <img src="assets/product-kol.jpeg" alt="">
-                    </figure>
-                    <figure class="card">
-                        <img src="assets/product-brokoli.jpeg" alt="">
-                    </figure>
-                    <figure class="card">
-                        <img src="assets/product-kailan.jpeg" alt="">
-                    </figure>
-                    <figure class="card">
-                        <img src="assets/product-doubaii.jpeg" alt="">
-                    </figure>
-                    <figure class="card">
-                        <img src="assets/product-horenzo.jpeg" alt="">
-                    </figure>
+                <div class="product-section-2-mid">
+                    <h1><b>PRODUK KAMI</b></h1>
+                    <p><b>Discover the freshness and premium quality of our products</b></p>
                 </div>
-                <br>
+                <div class="product-section-2-left">
+                    <img src="assets/spj-logo-theme.png" height="150px">
+                </div>
+            </div>
+            <div class="image-slider-container swiper">
+                <div class="card-wrapper">
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link" onclick="return false;">
+                                    <img src="assets/product-baby-pokchoy.jpeg" alt="Card image" class="card-image">
+                                    <div class="card-information-container">
+                                        <div class="title-badge-container">
+                                            <h2 class="card-title">Baby Pokchoy</h2>
+                                            <p class="badge">Sayur</p>
+                                        </div>
+                                        <button class="card-button material-symbols-outlined" onclick="openPopup('assets/product-baby-pokchoy.jpeg'); return false;">
+                                            arrow_forward
+                                        </button>                            
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link" onclick="return false;">
+                                    <img src="assets/product-bunga-kol.jpeg" alt="Card image" class="card-image">
+                                    <div class="card-information-container">
+                                        <div class="title-badge-container">
+                                            <h2 class="card-title">Bunga Kol</h2>
+                                            <p class="badge">Sayur</p>
+                                        </div>
+                                        <button class="card-button material-symbols-outlined" onclick="openPopup('assets/product-baby-pokchoy.jpeg'); return false;">
+                                            arrow_forward
+                                        </button>                            
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link" onclick="return false;">
+                                    <img src="assets/product-kol.jpeg" alt="Card image" class="card-image">
+                                    <div class="card-information-container">
+                                        <div class="title-badge-container">
+                                            <h2 class="card-title">Sayur Kol</h2>
+                                            <p class="badge">Sayur</p>
+                                        </div>
+                                        <button class="card-button material-symbols-outlined" onclick="openPopup('assets/product-baby-pokchoy.jpeg'); return false;">
+                                            arrow_forward
+                                        </button>                            
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link" onclick="return false;">
+                                    <img src="assets/product-brokoli.jpeg" alt="Card image" class="card-image">
+                                    <div class="card-information-container">
+                                        <div class="title-badge-container">
+                                            <h2 class="card-title">Brokoli</h2>
+                                            <p class="badge">Sayur</p>
+                                        </div>
+                                        <button class="card-button material-symbols-outlined" onclick="openPopup('assets/product-baby-pokchoy.jpeg'); return false;">
+                                            arrow_forward
+                                        </button>                            
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link" onclick="return false;">
+                                    <img src="assets/product-kailan.jpeg" alt="Card image" class="card-image">
+                                    <div class="card-information-container">
+                                        <div class="title-badge-container">
+                                            <h2 class="card-title">Kailan</h2>
+                                            <p class="badge">Sayur</p>
+                                        </div>
+                                        <button class="card-button material-symbols-outlined" onclick="openPopup('assets/product-baby-pokchoy.jpeg'); return false;">
+                                            arrow_forward
+                                        </button>                            
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link" onclick="return false;">
+                                    <img src="assets/product-doubaii.jpeg" alt="Card image" class="card-image">
+                                    <div class="card-information-container">
+                                        <div class="title-badge-container">
+                                            <h2 class="card-title">Doubai</h2>
+                                            <p class="badge">Sayur</p>
+                                        </div>
+                                        <button class="card-button material-symbols-outlined" onclick="openPopup('assets/product-baby-pokchoy.jpeg'); return false;">
+                                            arrow_forward
+                                        </button>                            
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link" onclick="return false;">
+                                    <img src="assets/product-horenzo.jpeg" alt="Card image" class="card-image">
+                                    <div class="card-information-container">
+                                        <div class="title-badge-container">
+                                            <h2 class="card-title">Horenzo</h2>
+                                            <p class="badge">Sayur</p>
+                                        </div>
+                                        <button class="card-button material-symbols-outlined" onclick="openPopup('assets/product-baby-pokchoy.jpeg'); return false;">
+                                            arrow_forward
+                                        </button>                            
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="image-slider-container swiper second-slider">
+                <div class="card-wrapper">
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link" onclick="return false;">
+                                    <img src="assets/product-baby-pokchoy.jpeg" alt="Card image" class="card-image">
+                                    <div class="card-information-container">
+                                        <div class="title-badge-container">
+                                            <h2 class="card-title">Baby Pokchoy</h2>
+                                            <p class="badge">Sayur</p>
+                                        </div>
+                                        <button class="card-button material-symbols-outlined" onclick="openPopup('assets/product-baby-pokchoy.jpeg'); return false;">
+                                            arrow_forward
+                                        </button>                            
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link" onclick="return false;">
+                                    <img src="assets/product-bunga-kol.jpeg" alt="Card image" class="card-image">
+                                    <div class="card-information-container">
+                                        <div class="title-badge-container">
+                                            <h2 class="card-title">Bunga Kol</h2>
+                                            <p class="badge">Sayur</p>
+                                        </div>
+                                        <button class="card-button material-symbols-outlined" onclick="openPopup('assets/product-baby-pokchoy.jpeg'); return false;">
+                                            arrow_forward
+                                        </button>                            
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link" onclick="return false;">
+                                    <img src="assets/product-kol.jpeg" alt="Card image" class="card-image">
+                                    <div class="card-information-container">
+                                        <div class="title-badge-container">
+                                            <h2 class="card-title">Sayur Kol</h2>
+                                            <p class="badge">Sayur</p>
+                                        </div>
+                                        <button class="card-button material-symbols-outlined" onclick="openPopup('assets/product-baby-pokchoy.jpeg'); return false;">
+                                            arrow_forward
+                                        </button>                            
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link" onclick="return false;">
+                                    <img src="assets/product-brokoli.jpeg" alt="Card image" class="card-image">
+                                    <div class="card-information-container">
+                                        <div class="title-badge-container">
+                                            <h2 class="card-title">Brokoli</h2>
+                                            <p class="badge">Sayur</p>
+                                        </div>
+                                        <button class="card-button material-symbols-outlined" onclick="openPopup('assets/product-baby-pokchoy.jpeg'); return false;">
+                                            arrow_forward
+                                        </button>                            
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link" onclick="return false;">
+                                    <img src="assets/product-kailan.jpeg" alt="Card image" class="card-image">
+                                    <div class="card-information-container">
+                                        <div class="title-badge-container">
+                                            <h2 class="card-title">Kailan</h2>
+                                            <p class="badge">Sayur</p>
+                                        </div>
+                                        <button class="card-button material-symbols-outlined" onclick="openPopup('assets/product-baby-pokchoy.jpeg'); return false;">
+                                            arrow_forward
+                                        </button>                            
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link" onclick="return false;">
+                                    <img src="assets/product-doubaii.jpeg" alt="Card image" class="card-image">
+                                    <div class="card-information-container">
+                                        <div class="title-badge-container">
+                                            <h2 class="card-title">Doubai</h2>
+                                            <p class="badge">Sayur</p>
+                                        </div>
+                                        <button class="card-button material-symbols-outlined" onclick="openPopup('assets/product-baby-pokchoy.jpeg'); return false;">
+                                            arrow_forward
+                                        </button>                            
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link" onclick="return false;">
+                                    <img src="assets/product-horenzo.jpeg" alt="Card image" class="card-image">
+                                    <div class="card-information-container">
+                                        <div class="title-badge-container">
+                                            <h2 class="card-title">Horenzo</h2>
+                                            <p class="badge">Sayur</p>
+                                        </div>
+                                        <button class="card-button material-symbols-outlined" onclick="openPopup('assets/product-baby-pokchoy.jpeg'); return false;">
+                                            arrow_forward
+                                        </button>                            
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+
+            <div id="imagePopup" class="popup-container hidden">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <img class="popup-content" id="popupImage">
+            </div>
+        </section>
+        <section class="contact-us-container" id="contact-us">
+            <div class="contact-us-wrapper">
+                <div class="contact-us-left">
+                    <p class="contact-us-left-title">Let's get in touch</p>
+                    <br>
+                    <p>We're open for any further discussion or just <br>to have a chat!</p>
+                    <br>
+                    <div class="contact-us-left-information">
+                        <div class="contact-us-left-child">
+                            <img class="contact-us-left-icon" src="assets/contact-us-left-logo (1).png" alt="alamat-icon">
+                            <p>
+                                <b>Alamat: </b><a class="link"href="https://www.google.com/maps/place/1%C2%B010%2705.4%22N+104%C2%B001%2710.7%22E/@1.1674525,104.0189654,18z/data=!4m4!3m3!8m2!3d1.168152!4d104.019649?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"> Komplek Union Industrial Park Blok J No.1<br>
+                                Jl. Yos Sudarso Blok AA No.7- 8, Batu Ampar <br>
+                                Kota Batam, Kepulauan Riau 29444</a>
+                            </p>
+                        </div>
+                        <br>
+                        <div class="contact-us-left-child">
+                            <img class="contact-us-left-icon" src="assets/contact-us-left-logo (4).png" alt="phone-icon">
+                            <p>
+                                <b>Phone: </b>+62 815 881 5121
+                            </p>
+                        </div>
+                        <br>
+                        <div class="contact-us-left-child">
+                            <img class="contact-us-left-icon" src="assets/contact-us-left-logo (2).png" alt="phone-icon">
+                            <p>
+                                <b>Email: </b><a class="link" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTNHdZTKwdpMcHqccgXfbRbjZMcdhhNJfntKnxVQxxtxFZBlXgGvWfldDQzBBtQJRqBpNB">spj.batam@gmail.com</a>
+                            </p>
+                        </div>
+                        <br>
+                        <div class="contact-us-left-child">
+                            <img class="contact-us-left-icon" src="assets/contact-us-left-logo (3).png" alt="phone-icon">
+                            <p>
+                                <b>Website: </b><a class="link" href="">segarprimajaya.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-us-right">
+                    <p class="contact-us-left-title"><b>Get in touch</b></p>
+                    <br>
+                    <div class="input-group-both">
+                        <div class="input-group">
+                            <label for="fullname"><b>FULL NAME</b></label>
+                            <input type="text" id="fullname" placeholder="Name">
+                        </div>
+                        <div class="input-group">
+                            <label for="email"><b>EMAIL ADDRESS</b></label>
+                            <input type="email" id="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="subject"><b>SUBJECT</b></label>
+                        <input type="text" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="input-group">
+                        <label for="message"><b>MESSAGE</b></label>
+                        <input type="text" id="message" placeholder="Message">
+                    </div>
+                
+                    <a id="send-email" href="#">Send Message</a>
+                    
+                    <script>
+                        document.getElementById('send-email').addEventListener('click', function (event) {
+                            event.preventDefault();
+                    
+                            // Get the input value
+                            const name = document.getElementById('fullname').value;
+                            const title = document.getElementById('subject').value;
+                            const message = document.getElementById('message').value;
+
+                            // Construct the mailto link
+                            const email = "spj.batam@gmail.com";
+                            const subject = `Website Form : ${title}`;
+                            const body = `Hello,\n\nMy name is: ${name}\n\n${message}\n\nBest regards,`;
+                    
+                            // Redirect to the mailto link
+                            window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                        });
+                    </script>
+                </div>
             </div>
         </section>
     </main>
@@ -239,6 +546,8 @@
             
         </p>
     </footer>
+    <!--Linking SwiperJS script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
